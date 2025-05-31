@@ -56,15 +56,6 @@ Welcome to my GitHub portfolio! I'm a passionate DevOps engineer with a love for
 - 🎮 Mini Game Development (HTML/CSS)
 
 ---
-
-## 📈 GitHub Stats
-
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical)
-
----
-
 ## ✍️ Latest Blog Posts / Notes *(Optional)*
 
 <!-- BLOG-POST-LIST:START -->
