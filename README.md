@@ -32,17 +32,6 @@ Welcome to my GitHub portfolio! I'm a passionate DevOps engineer with a love for
 - Bash, Python, YAML
 - SQL (MS SQL, PostgreSQL)
 
----
-
-## 🧪 Hobby Projects
-
-| Project | Description | Stack |
-|--------|-------------|-------|
-| [Routine Creator App](#) | Web app to manage daily routines with visual time blocks | HTML, CSS, JS |
-| [Animated Stickman](#) | A fun SVG-based animation project | JS, HTML |
-| [Infinite Road Game](#) | A simple 2D car game | HTML, CSS, JS |
-| [DevOps CI/CD Setup](#) | Automates deployment of Java app with Docker, ECR, ECS, CloudFormation | Docker, AWS, GitLab CI |
-
 ➡️ Check out more in my [Repositories](https://github.com/rathoremayank?tab=repositories)
 
 ---
@@ -54,14 +43,6 @@ Welcome to my GitHub portfolio! I'm a passionate DevOps engineer with a love for
 - 🚴‍♂️ Travel & Road Trips
 - 🧘 Mental Peace & Growth
 - 🎮 Mini Game Development (HTML/CSS)
-
----
-## ✍️ Latest Blog Posts / Notes *(Optional)*
-
-<!-- BLOG-POST-LIST:START -->
-- [Post 1](#)
-- [Post 2](#)
-<!-- BLOG-POST-LIST:END -->
 
 ---
 
