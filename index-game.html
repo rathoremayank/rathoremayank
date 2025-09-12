@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Singh Rathore | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Mayank Rathore</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>
+      I’m a Senior DevOps Engineer & AI Enthusiast with 7+ years of experience in cloud, infrastructure automation, and AI-driven DevOps solutions.
+    </p>
+    <a href="projects.html" class="btn">View My Projects</a>
+  </section>
+
+  <!-- Fun Game -->
+  <section class="section">
+    <h2>🎮 Fun Game: Catch the Box</h2>
+    <div id="game-area">
+      <div id="box"></div>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <p>AWS / Azure / GCP</p>
+        <div class="bar"><span style="width: 90%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Kubernetes / Docker</p>
+        <div class="bar"><span style="width: 85%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Terraform / Ansible</p>
+        <div class="bar"><span style="width: 80%"></span></div>
+      </div>
+      <div class="skill">
+        <p>CI/CD (Jenkins, GitHub Actions, ArgoCD)</p>
+        <div class="bar"><span style="width: 85%"></span></div>
+      </div>
+      <div class="skill">
+        <p>Monitoring (Prometheus, Grafana, ELK)</p>
+        <div class="bar"><span style="width: 75%"></span></div>
+      </div>
+      <div class="skill">
+        <p>AI/ML Ops (LangChain, Hugging Face, MLflow)</p>
+        <div class="bar"><span style="width: 70%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="cert-card">
+        <img src="cert-aws.png" alt="AWS Certification">
+        <h3>AWS Solutions Architect</h3>
+      </div>
+      <div class="cert-card">
+        <img src="cert-azure.png" alt="Azure Certification">
+        <h3>Microsoft Azure Administrator</h3>
+      </div>
+      <div class="cert-card">
+        <img src="cert-docker.png" alt="Docker Certification">
+        <h3>Docker Certified Associate</h3>
+      </div>
+      <div class="cert-card">
+        <img src="cert-kubernetes.png" alt="Kubernetes Certification">
+        <h3>Kubernetes Certified</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mayank Singh Rathore</p>
+  </footer>
+
+  <!-- Game Script -->
+  <script>
+    const box = document.getElementById("box");
+    const gameArea = document.getElementById("game-area");
+    const scoreEl = document.getElementById("score");
+    let score = 0;
+
+    function moveBox() {
+      const x = Math.random() * (gameArea.offsetWidth - 50);
+      const y = Math.random() * (gameArea.offsetHeight - 50);
+      box.style.left = x + "px";
+      box.style.top = y + "px";
+    }
+
+    box.addEventListener("click", () => {
+      score++;
+      scoreEl.textContent = score;
+      moveBox();
+    });
+
+    // Initial placement + move every 2s
+    moveBox();
+    setInterval(moveBox, 2000);
+  </script>
+</body>
+</html>

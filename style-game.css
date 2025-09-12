@@ -1,0 +1,308 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #161b22;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #30363d;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #58a6ff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #c9d1d9;
+  font-weight: 500;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #58a6ff;
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background: #58a6ff;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  color: #e6edf3;
+  padding: 100px 40px;
+  text-align: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #58a6ff;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #8b949e;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #238636;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #2ea043;
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+.section {
+  padding: 70px 80px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #58a6ff;
+}
+
+/* Certifications */
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.cert-card {
+  background: #161b22;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #30363d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(88,166,255,0.3);
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+  color: #58a6ff;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #161b22;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #30363d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgba(88,166,255,0.25);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #58a6ff;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: #161b22;
+  padding: 35px;
+  border-radius: 15px;
+  border: 1px solid #30363d;
+  box-shadow: 0 0 20px rgba(88,166,255,0.15);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #58a6ff;
+  outline: none;
+}
+
+.contact-form button {
+  background: #238636;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2ea043;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #161b22;
+  color: #8b949e;
+  border-top: 1px solid #30363d;
+}
+
+
+
+/* Game */
+#game-area {
+  margin: 30px auto;
+  width: 400px;
+  height: 300px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background: #58a6ff;
+  position: absolute;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: left 0.3s, top 0.3s;
+}
+
+#game-area p {
+  margin-top: 270px;
+  color: #8b949e;
+  font-weight: bold;
+}
+
+/* Skills */
+.skills {
+  max-width: 700px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background: #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 12px;
+  background: linear-gradient(90deg, #58a6ff, #8338ec);
+  border-radius: 10px;
+}
+
+/* Certifications with Images */
+.cert-card {
+  text-align: center;
+  background: #161b22;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #30363d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(88,166,255,0.3);
+}
+
+.cert-card h3 {
+  color: #58a6ff;
+}
