@@ -9,7 +9,7 @@
 <body>
   <!-- Navbar -->
   <div class="navbar">
-    <h1>Mayank Singh Rathore</h1>
+    <h1>MSR</h1>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -18,20 +18,37 @@
     </ul>
   </div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Welcome to My Portfolio</h2>
-    <p>
-        <b>Hi! I am Mayank.</b>
-        <br>
 
-        I’m a Senior DevOps Engineer & AI Enthusiast with 7+ years of experience in cloud, automation, and AI-driven DevOps. 
-        I’ve led cloud migrations, GitOps automation, and Kubernetes deployments at my previous organizations, helping enterprises modernize legacy systems into resilient, self-healing infrastructures. Passionate about bridging DevOps with AI, I focus on building intelligent, cost-optimized systems while sharing knowledge through writing and speaking.
 
-      
-    </p>
-    <a href="projects.html" class="btn">View My Projects</a>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <!-- Banner Background -->
+  <div class="hero-banner">
+    <img src="img/profile.jpg" alt="Mayank Singh Rathore Banner">
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <!-- Name & Typing Effect -->
+    <h1>Mayank Singh Rathore</h1>
+    <h2>
+      <span class="typing"></span>
+    </h2>
+
+    <!-- Recent Highlight -->
+    <p class="highlight">🚀 Currently working on AI-driven MLOps pipelines</p>
+
+    <!-- Social Links -->
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/rathoremayank" target="_blank">LinkedIn</a>
+      <a href="https://github.com/rathoremayank" target="_blank">GitHub</a>
+      <a href="https://twitter.com/" target="_blank">Twitter</a>
+    </div>
+  </div>
+</section>
+
+
+
 
   <!-- Skills -->
 <section class="section">
@@ -89,4 +106,53 @@
     <p>© 2025 Mayank Singh Rathore</p>
   </footer>
 </body>
+
+
+
+<!-- Typing Effect Script -->
+<script>
+  const roles = [
+    "Senior DevOps Engineer",
+    "Cloud Specialist",
+    "AI Innovator",
+    "Infrastructure Automator",
+    "Kubernetes Expert"
+  ];
+  let i = 0;
+  let j = 0;
+  let currentRole = "";
+  let isDeleting = false;
+  const typingElement = document.querySelector(".typing");
+
+  function typeEffect() {
+    if (i < roles.length) {
+      if (!isDeleting && j <= roles[i].length) {
+        currentRole = roles[i].substring(0, j++);
+        typingElement.textContent = currentRole;
+      }
+
+      if (isDeleting && j >= 0) {
+        currentRole = roles[i].substring(0, j--);
+        typingElement.textContent = currentRole;
+      }
+
+      if (j === roles[i].length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000); // pause at end
+        return;
+      }
+
+      if (isDeleting && j === 0) {
+        isDeleting = false;
+        i++;
+        if (i === roles.length) i = 0;
+      }
+    }
+    setTimeout(typeEffect, isDeleting ? 50 : 120);
+  }
+  typeEffect();
+</script>
+
+
+
 </html>
