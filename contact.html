@@ -5,50 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Mayank Singh Rathore</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Contact Page Background */
+    body {
+      background: linear-gradient(135deg, #0d1117, #161b22, #0d1117);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    /* Contact Info Card */
+    .contact-info {
+      background: rgba(22, 27, 34, 0.95);
+      border: 1px solid #30363d;
+      border-radius: 15px;
+      padding: 30px 25px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-info:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8);
+    }
+
+    .contact-info h3 {
+      color: #f0f6fc;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .contact-info p {
+      color: #c9d1d9;
+      margin: 12px 0;
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      margin-top: 10px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn-download {
+      background: linear-gradient(90deg, #58ffa6, #1ffeb6);
+      color: #0d1117;
+    }
+
+    .btn-download:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-recruit {
+      background: linear-gradient(90deg, #ff7b72, #ff4c4b);
+      color: #0d1117;
+    }
+
+    .btn-recruit:hover {
+      transform: scale(1.05);
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      background: #0d1117;
+      padding: 12px 18px;
+      border-radius: 30px;
+      color: #58a6ff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      background: #21262d;
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
   <div class="navbar">
-    <div class="logo">
-      <h1>Mayank Rathore <span class="designation">| Senior DevOps Engineer & AI Enthusiast</span></h1>
-    </div>
+    <h1>Mayank Singh Rathore</h1>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 
   <!-- Contact Section -->
-  <section class="section card-section">
+  <section class="contact-section">
     <h2>Contact Me</h2>
-
     <div class="contact-container">
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <h3>Send Me a Message</h3>
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea rows="6" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
-      <!-- Contact Info -->
+      <!-- Contact Info Card -->
       <div class="contact-info">
         <h3>Get in Touch</h3>
         <p>📧 <a href="mailto:career.mayankrathore@gmail.com">career.mayankrathore@gmail.com</a></p>
         <p>📞 <a href="tel:+919155157656">+91 91551 57656</a></p>
-        <p>💼 <a href="resume.pdf" download class="btn">Download Resume</a></p>
-        <p>🌐 Connect:</p>
+
+        <a href="resume.pdf" download class="btn btn-download">📄 Download Resume</a>
+
+        <p style="margin-top:20px;">🌐 Connect with me</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/rathoremayank" target="_blank">LinkedIn</a>
-          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="https://github.com/rathoremayank" target="_blank">GitHub</a>
           <a href="https://twitter.com/" target="_blank">Twitter</a>
         </div>
-        <a href="mailto:career.mayankrathore@gmail.com" class="btn recruit-btn">Recruit Me</a>
+
+        <a href="mailto:career.mayankrathore@gmail.com" class="btn btn-recruit">🚀 Recruit Me</a>
       </div>
     </div>
   </section>
