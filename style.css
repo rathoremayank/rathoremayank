@@ -248,6 +248,10 @@ body {
   margin: 8px 0;
 }
 
+.contact-info a {
+  color: #fff;
+}
+
 /* Social */
 .social-icons {
   display: flex;
@@ -488,15 +492,15 @@ footer {
 }
 
 .work-card .company {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 800;
   color: #58a6ff;
   margin-bottom: 4px;
 }
 
 .work-card .tenure {
   font-size: 0.9rem;
-  color: #8b949e;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -643,7 +647,7 @@ footer {
 /* Banner image */
 .hero-banner {
   width: 100%;
-  height: 280px;
+  height: 240px;
   overflow: hidden;
 }
 
@@ -662,13 +666,13 @@ footer {
 }
 
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   margin-bottom: 8px;
   color: #f8a744;
 }
 
 .hero h2 {
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   min-height: 40px;
   margin-bottom: 12px;
   color: #c9d1d9;
